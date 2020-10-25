@@ -1,9 +1,8 @@
-package homework.day09;
+package Homework.day09;
 
-import javax.swing.*;
 import java.util.Scanner;
 
-public class qiuzuidijiage {
+public class QiuZuiDiJiaGe {
     public static void main(String[] args) {
         //求出4家店的最低手机价格
 
