@@ -2,8 +2,9 @@ package Homework.day09;
 
 public class QiuWuRenPingJunFen {
     public static void main(String[] args) {
-        //用数组求5人平均分
-
+        /**
+         * 用数组求5人平均分
+         */
         int age=0;
         int sum=0;
         double num[]=new double[]{50,90,20,40,10};

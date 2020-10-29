@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class QiuZuiDiJiaGe {
     public static void main(String[] args) {
-        //求出4家店的最低手机价格
-
+        /**
+         * 求出4家店的最低手机价格
+         */
         Scanner input=new Scanner(System.in);
         System.out.println("请输入4家店的价格");
         int price[]=new int[]{3000,3150,2900,2950};

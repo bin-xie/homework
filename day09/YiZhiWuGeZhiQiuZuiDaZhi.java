@@ -3,8 +3,9 @@ package Homework.day09;
 import java.util.Scanner;
 
 public class YiZhiWuGeZhiQiuZuiDaZhi {
-
-        //  4.7.8.1.60求出数组中的最大值
+    /**
+     * 4.7.8.1.60求出数组中的最大值
+     */
     public static void main(String[] args) {
 
         int val[]={4,7,8,1,60};

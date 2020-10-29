@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class GouWuJieSuan {
     public static void main(String[] args) {
-        //以表格的形式输出5笔购物金额及总金额
-
+        /**
+         * 以表格的形式输出5笔购物金额及总金额
+         */
         System.out.println("请输入会员本月的消费记录");
         Scanner input=new Scanner(System.in);
         double sum=0;
