@@ -1,13 +1,17 @@
 package Homework.day03;
-
+import java.util.Scanner;
 public class Test02 {
     /**
-     * 去年Apple笔记本所占市场份额是20，今年增长的市场份额是9.8，求今年所占份额？
+     * 输入天数 求有多少周 多少天
      */
     public static void main(String[] args) {
-        int before=20;//apple笔记本市场份额
-        double rise=9.8;//增长的份额
-        double now =(int)before + rise;
-        System.out.println(now);
+        Scanner sc= new Scanner(System.in);
+
+        System.out.println("请输入天数：");
+        int day=sc.nextByte();
+        int week=day/7;                 //求出多少周
+        System.out.println("总共有："+week+"周");
+        int Remaining=day%7;            //剩余多少天
+        System.out.println("剩余天数:"+Remaining);
     }
 }
