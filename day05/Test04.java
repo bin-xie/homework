@@ -4,28 +4,27 @@ import java.util.Scanner;
 
 public class Test04 {
     /**
-     * 会员购物时，根据积分的不同享受不同的折扣
-     *计算会员购物时获得的折扣
-     *     会员积分　　　　　　　  折扣　　　　　　　　　　　　　　 //请输入会员积分：3420
-     *     X < 2000　　　　　　   9折　　　　　　　　　　　　　　 //该会员享受的折扣是：0.8
-     * 2000 <= x <4000　　　　　　8折
-     * 4000 <= X <8000　　　　　　7折
-     *     X  >=　8000         　 6折
+     * 学校举行运动会，百米赛跑跑入10秒内的学生有资格进决赛，根据性别分别进入男子组和女子组
+     *       判断是否能够进入决赛    在确定进入决赛的情况下，判断是进入男子组，还是进入女子组
      */
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("请输入会员积分");
-        int integral=sc.nextInt();
-        //int integral='x';
-        if (integral<2000){
-            System.out.println("9折");
-        }else if (integral>= 2000 && integral<4000){
-            System.out.println("8折");
-        }else if (integral>= 4000 && integral<8000){
-            System.out.println("7折");
-        }else if (integral>= 8000 ){
-            System.out.println("6折");
+        Scanner input=new Scanner(System.in);
+
+        int speed=10;  //赛跑速度 秒
+        String sex="男";
+        System.out.println("请输入您的速度：");
+        speed=input.nextInt();
+        if (speed<10){
+            System.out.println("恭喜您已进入决赛！\n");
+            System.out.println("请输入您的性别：");
+            sex=input.next();
+            if ("男".equals(sex)){
+                System.out.println("进入男子组");
+            }else {
+                System.out.println("进入女子组");
+            }
+        }else {
+            System.out.println("淘汰，请继续努力");
         }
     }
-
 }
