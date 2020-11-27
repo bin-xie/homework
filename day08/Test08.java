@@ -8,8 +8,8 @@ public class Test08 {
      */
     public static void main(String[] args){
         Scanner input=new Scanner(System.in);
-        String name="j";
-        int password=123456;
+        String name="j";                    //名字j
+        int password=123456;                //密码设定为123456
         for (int i=3;i>0;){
             System.out.print("请输入用户名：");
             name = input.next();
